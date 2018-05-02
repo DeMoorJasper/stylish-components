@@ -140,7 +140,7 @@ export default () => {
 
 Always utilise props in a seperate block (preferably at the end of the css), otherwise it might not work
 
-Bad example (⚠️ this will not work)
+⚠️ this example will not work
 
 ```Javascript
 const AnotherWrongButton = stylish.button`
