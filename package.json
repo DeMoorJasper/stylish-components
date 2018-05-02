@@ -3,9 +3,17 @@
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
+  "author": {
+    "name": "Jasper De Moor",
+    "url": "http://jasperdemoor.me/"
+  },
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeMoorJasper/stylish-components.git"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.3",
