@@ -2,3 +2,6 @@
 /storybook-static
 /stories
 /.storybook
+/.cache
+/dist
+yarn.lock
