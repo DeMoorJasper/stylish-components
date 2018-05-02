@@ -12,8 +12,7 @@ const constructElement = (element, css, injectFunctions, classNames = []) => {
 }
 
 export default (tag) => (...css) => {
+  css[0] = css[0].map((el, index) => (css.length > (index + 1) && typeof css[index + 1] === 'string' && el + css[index + 1]) || el).join('');
   const element = (props) => React.createElement(tag, props);
-  let injectFunctions = [];
-  css.forEach(f => typeof f === 'function' && injectFunctions.push(f));
-  return constructElement(element, css[0], injectFunctions);
+  return constructElement(element, css, css.filter(f => typeof f === 'function'));
 };

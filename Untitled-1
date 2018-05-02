@@ -1,0 +1,4 @@
+Array.apply(null, Array(6)).map(el => {
+  console.log('Hi');
+  return '0123456789ABCDEF'[Math.floor(Math.random() * 16)];
+}).join('');

@@ -111,3 +111,40 @@ export default () => {
   </div>;
 }
 ```
+
+You can also use variables that don't depend on props, using the standard template literal syntax.
+
+```Javascript
+import { stylish } from 'stylish-components';
+
+let bg = '#ffffff';
+let color = '#ffffff';
+let randomColor = () => `#${Array.apply(null, Array(6)).map(el => '0123456789ABCDEF'[Math.floor(Math.random() * 16)]).join('')}`;
+
+const Button = stylish.button`
+  background: ${bg};
+  color: ${color};
+  border: 1px solid ${randomColor()};
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px 10px;
+`;
+
+export default () => {
+  return <div>
+    <Button>Button 🚀</Button>
+    <Button primary="true">Button 🚀</Button>
+  </div>;
+}
+```
+
+Always utilise props in a seperate block (preferably at the end of the css), otherwise it might not work
+
+Bad example (⚠️ this will not work)
+
+```Javascript
+const AnotherWrongButton = stylish.button`
+  background: ${props => props.primary && 'palevioletred'};
+  color: #a2a2a2;
+`;
+```
