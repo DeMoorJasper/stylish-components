@@ -1,7 +1,7 @@
 {
   "name": "stylish-components",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist.js",
   "license": "MIT",
   "author": {
     "name": "Jasper De Moor",
@@ -20,12 +20,14 @@
     "@storybook/addon-links": "^3.4.3",
     "@storybook/addons": "^3.4.3",
     "@storybook/react": "^3.4.3",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-runtime": "^6.26.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "babel src -d lib"
   }
 }

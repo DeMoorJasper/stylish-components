@@ -4,4 +4,8 @@
 /.storybook
 /.cache
 /dist
+/src
 yarn.lock
+index.js
+readme.md
+.babelrc
