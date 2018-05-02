@@ -85,3 +85,29 @@ const MegaExtendedButton = SuperExtendedButton.extend`
   display: block;
 `;
 ```
+
+### Use props to create dynamic styling
+
+```Javascript
+import { stylish } from 'stylish-components';
+
+const Button = stylish.button`
+  background: #ffffff;
+  color: #a2a2a2;
+  border: 1px solid #a2a2a2;
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px 10px;
+  ${props => props.primary && css`
+    background: palevioletred;
+    color: white;
+  `}
+`;
+
+export default () => {
+  return <div>
+    <Button>Button 🚀</Button>
+    <Button primary="true">Button 🚀</Button>
+  </div>;
+}
+```
