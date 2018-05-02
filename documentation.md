@@ -3,7 +3,7 @@
 ## Creating a simple stylish-component
 
 ```Javascript
-import { stylish } from 'stylish-components';
+import { stylish } from 'tiny-stylish-components';
 
 const Button = stylish.button`
   background: #ffffff;
@@ -18,7 +18,7 @@ const Button = stylish.button`
 ## Handle css events
 
 ```Javascript
-import { stylish } from 'stylish-components';
+import { stylish } from 'tiny-stylish-components';
 
 const Button = stylish.button`
   background: #ffffff;
@@ -37,7 +37,7 @@ const Button = stylish.button`
 ## Handle media queries
 
 ```Javascript
-import { stylish } from 'stylish-components';
+import { stylish } from 'tiny-stylish-components';
 
 const Button = stylish.button`
   background: #ffffff;
@@ -58,7 +58,7 @@ const Button = stylish.button`
 Extending components can be chained
 
 ```Javascript
-import { stylish } from 'stylish-components';
+import { stylish } from 'tiny-stylish-components';
 
 const Button = stylish.button`
   background: #ffffff;
@@ -85,7 +85,7 @@ const MegaExtendedButton = SuperExtendedButton.extend`
 ## Use props to create dynamic styling
 
 ```Javascript
-import { stylish } from 'stylish-components';
+import { stylish } from 'tiny-stylish-components';
 
 const Button = stylish.button`
   background: #ffffff;
@@ -111,7 +111,7 @@ export default () => {
 You can also use variables that don't depend on props, using the standard template literal syntax.
 
 ```Javascript
-import { stylish } from 'stylish-components';
+import { stylish } from 'tiny-stylish-components';
 
 let bg = '#ffffff';
 let color = '#ffffff';

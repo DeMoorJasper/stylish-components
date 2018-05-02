@@ -4,8 +4,22 @@ Stylish components is a blazing fast, lightweight, component styling library sim
 
 ## Getting started
 
+Install:
+
+```bash
+  yarn add tiny-stylish-components
+```
+
+or
+
+```bash
+  npm install tiny-stylish-components -S
+```
+
+Creating a component:
+
 ```Javascript
-import { stylish } from 'stylish-components';
+import { stylish } from 'tiny-stylish-components';
 
 const Button = stylish.button`
   background: #ffffff;
