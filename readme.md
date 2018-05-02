@@ -14,7 +14,7 @@ const Button = stylish.button`
 `;
 
 render() {
-  return <Button>I'm a button! Click Me!</Button>;
+  return <Button>I am a button! Click Me!</Button>;
 }
 ```
 
