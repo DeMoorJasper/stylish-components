@@ -2,6 +2,17 @@
 
 Stylish components is a blazing fast, lightweight, component styling library similar to `styled-components`.
 
+## Compared to styled-components
+
+This package is lacking a lot of the features styled-components provides, but provides all the features I personally use. I might add theming and animations if requested or if I need them personally.
+
+### File size comparison
+
+| Type        | styled-components | tiny-stylish-components      |
+|---          |---                |---                           |
+| **Regular** | 44.8kB            | **3.9kB**                    |
+| **gzipped** | 16.7kB            | **1.7kB**                    |
+
 ## Getting started
 
 Install:
