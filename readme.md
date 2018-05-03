@@ -10,8 +10,8 @@ This package is lacking a lot of the features styled-components provides, but pr
 
 | Type        | styled-components | tiny-stylish-components      |
 |---          |---                |---                           |
-| **Regular** | 44.8kB            | **3.9kB**                    |
-| **gzipped** | 16.7kB            | **1.7kB**                    |
+| **Regular** | 43kB              | **3.9kB**                    |
+| **gzipped** | 16.3kB            | **1.7kB**                    |
 
 ## Getting started
 
