@@ -1,5 +1,7 @@
 # Stylish components
 
+[![npm version](https://badge.fury.io/js/tiny-stylish-components.svg)](https://npmjs.org/package/tiny-stylish-components)
+
 Stylish components is a blazing fast, lightweight, component styling library similar to `styled-components`.
 
 ## Compared to styled-components
