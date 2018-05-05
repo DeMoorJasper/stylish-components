@@ -1,4 +1,4 @@
-# Stylish components
+# ![Stylish components](stylish.png)
 
 [![npm version](https://badge.fury.io/js/tiny-stylish-components.svg)](https://npmjs.org/package/tiny-stylish-components)
 
