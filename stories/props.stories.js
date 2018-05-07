@@ -16,6 +16,7 @@ const Button = stylish.button`
   border-radius: 5px;
   width: 100px;
   padding: 5px 10px;
+  margin: 10px;
   ${props => props.primary && css`
     background: palevioletred;
     color: white;
@@ -27,6 +28,13 @@ const Button = stylish.button`
   `}
 `;
 
+const ExtendedButton = Button.extend`
+  ${props => props.extended && css`
+    background: yellow;
+    color: white;
+  `}
+`;
+
 storiesOf('Props', module)
   .add('button', () => {
     return <div>
@@ -34,4 +42,10 @@ storiesOf('Props', module)
       <Button primary="true">Button 🚀</Button>
       <Button hello="true">Button 🚀</Button>
     </div>;
-  });
+  })
+  .add('extended button', () => {
+    return <div>
+      <Button hello="true">Button 🚀</Button>
+      <ExtendedButton extended="true">Extended 🚀</ExtendedButton>
+    </div>;
+  });;

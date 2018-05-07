@@ -17,7 +17,7 @@ const extractSections = (css) => {
     });
     return sections;
   }
-}
+};
 
 const process = (css, hash) => {
   css = css.trim();
@@ -35,7 +35,7 @@ const process = (css, hash) => {
     }
     ${(pieces && pieces.join('\n')) || ''}
   `;
-}
+};
 
 export default (css) => {
   let hash = `c${murmurHash(css)}`;

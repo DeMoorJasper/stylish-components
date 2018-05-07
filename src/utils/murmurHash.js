@@ -1,17 +1,10 @@
 // Source: https://github.com/garycourt/murmurhash-js/blob/master/murmurhash2_gc.js
 function murmurhash(str) {
-  var
-    l = str.length | 0,
-    h = l | 0,
-    i = 0,
-    k;
+  let l = str.length | 0, h = l | 0, i = 0, k;
 
   while (l >= 4) {
-    k =
-      ((str.charCodeAt(i) & 0xff)) |
-      ((str.charCodeAt(++i) & 0xff) << 8) |
-      ((str.charCodeAt(++i) & 0xff) << 16) |
-      ((str.charCodeAt(++i) & 0xff) << 24);
+    k = ((str.charCodeAt(i) & 0xff)) | ((str.charCodeAt(++i) & 0xff) << 8) 
+      | ((str.charCodeAt(++i) & 0xff) << 16) | ((str.charCodeAt(++i) & 0xff) << 24);
 
     k = (((k & 0xffff) * 0x5bd1e995) + ((((k >>> 16) * 0x5bd1e995) & 0xffff) << 16));
     k ^= k >>> 24;

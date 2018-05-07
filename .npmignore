@@ -5,7 +5,8 @@
 /.cache
 /dist
 /src
-yarn.lock
+*.lock
+*.log
 index.js
 .babelrc
 documentation.md
