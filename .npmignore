@@ -8,7 +8,6 @@
 
 # Source files
 /src
-index.js
 
 # Babel & Terser
 /babel-dist

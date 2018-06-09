@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import { stylish, css } from '../index';
+import { stylish, css } from '../src/dist';
 
 let color = '#a2a2a2';
 let bg = '#ffffff';

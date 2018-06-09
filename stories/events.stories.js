@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import { stylish } from '../index';
+import { stylish } from '../src/dist';
 
 const Button = stylish.button`
   background: #ffffff;
