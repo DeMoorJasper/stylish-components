@@ -1,7 +1,13 @@
+# Node things
 /node_modules
+
+# Storybook things
 /storybook-static
-/.cache
-/dist
+
+# Build artifacts
+/babel-dist
+/lib
+
+# Logs & locks
 *.lock
 *.log
-/lib

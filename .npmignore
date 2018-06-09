@@ -1,12 +1,23 @@
+# Node things
 /node_modules
+
+# Storybook things
 /storybook-static
 /stories
 /.storybook
-/.cache
-/dist
+
+# Source files
 /src
+index.js
+
+# Babel & Terser
+/babel-dist
+.babelrc
+minify.js
+
+# Logs & locks
 *.lock
 *.log
-index.js
-.babelrc
+
+# Documentation
 documentation.md
