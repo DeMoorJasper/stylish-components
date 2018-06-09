@@ -1,5 +1,5 @@
-import stylish from './lib/stylish';
-import css from './lib/css/css';
+import stylish from './stylish';
+import css from './css/css';
 const styled = stylish;
 
 export default stylish;
